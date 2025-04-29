@@ -212,9 +212,15 @@ li {
   html {
     font-size: 10px;
   }
+  main {
+    width: 90vw;
+  }
 }
 @media screen and (max-width: 330px) {
   html {
     font-size: 8px;
+  }
+  main {
+    width: 90vw;
   }
 }
