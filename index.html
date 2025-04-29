@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-head">
+        <div id="profile">
+          <img src="img/foto-profil.png" alt="foto-profil" />
+          <div class="user">
+            <h2>Dennis</h2>
+            <p>Junior Engineer</p>
+          </div>
+        </div>
+        <div id="time">
+          <p id="currentDate"></p>
+        </div>
+      </div>
+      <div class="container-content">
+        <div id="to-do-form">
+          <textarea id="toDoInput" placeholder="Tuliskan tugas..."></textarea>
+          <div class="kirim">
+            <select id="priorityLevel">
+              <option value="">Level Prioritas</option>
+              <option value="low">Low ⭐</option>
+              <option value="medium">Medium ⭐⭐</option>
+              <option value="high">High ⭐⭐⭐</option>
+            </select>
+            <button id="submitButton">Submit</button>
+          </div>
+        </div>
+        <div class="output">
+          <div id="to-do-list">
+            <h2>To-Do</h2>
+            <ul id="toDoList"></ul>
+          </div>
+          <div id="done-list">
+            <h2>Done</h2>
+            <ul id="doneList"></ul>
+          </div>
+        </div>
+        <button id="deleteButton">Delete All</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --primer: #f2efe7;
+  --sekunder: #9acbd0;
+  --aksen-1: #48a6a7;
+  --aksen-2: #2973b2;
+  --font-color: #213448;
+}
+body {
+  background: #efefef;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 6rem;
+}
+main {
+  width: 80vw;
+  height: auto;
+  background: var(--primer);
+  border: 1px solid var(--aksen-2);
+  border-radius: 1.2rem;
+}
+.container-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background: var(--sekunder);
+  align-items: center;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+#profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: var(--font-color);
+}
+.user p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--font-color);
+}
+#time {
+  font-size: 1.2rem;
+  font-style: italic;
+  align-self: flex-end;
+  color: var(--font-color);
+}
+.container-content {
+  padding: 1em 2em;
+}
+#to-do-form {
+  display: flex;
+  gap: 2rem;
+  height: 6rem;
+  width: 100%;
+  justify-content: space-between;
+}
+textarea {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  background-color: var(--primer);
+  border: 1px solid var(--aksen-2);
+  color: var(--font-color);
+}
+.kirim {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#priorityLevel {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  background-color: var(--sekunder);
+  border: 1px solid var(--aksen-2);
+  color: var(--font-color);
+  cursor: pointer;
+}
+.kirim button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  background-color: var(--aksen-1);
+  border: 1px solid var(--aksen-2);
+  color: var(--font-color);
+  transition: all 0.3s ease-in-out;
+}
+.output {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  width: 100%;
+  gap: 1.2rem;
+  height: auto;
+}
+#to-do-list h2,
+#done-list h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  font-style: italic;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: var(--font-color);
+}
+#to-do-list,
+#done-list {
+  background: var(--primer);
+  height: 100%;
+}
+ul {
+  border: 1px solid var(--aksen-2);
+  height: 25rem;
+  overflow-y: scroll;
+  border-radius: 1.2rem;
+  list-style: none;
+  padding: 0.4rem;
+  box-shadow: inset 3px 3px 8px var(--sekunder);
+}
+ul::-webkit-scrollbar {
+  display: none;
+}
+li {
+  border-radius: 1.2rem;
+  margin-bottom: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.3rem 0.7rem;
+  color: var(--font-color);
+  background: var(--sekunder);
+}
+.kanan {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.taskText {
+  font-size: 1rem;
+  color: var(--font-color);
+}
+.date {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--aksen-2);
+}
+.checkbox {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+.completed .taskText {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.delete-item {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.7rem;
+  font-size: 1.4rem;
+  background-color: var(--aksen-1);
+  border: 1px solid var(--aksen-2);
+  color: var(--font-color);
+  transition: all 0.3s ease-in-out;
+}
+#deleteButton {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  margin-top: 1.2rem;
+  background-color: var(--aksen-1);
+  border: 1px solid var(--aksen-2);
+  color: var(--font-color);
+  transition: all 0.3s ease-in-out;
+}
+.kirim button:hover,
+#deleteButton:hover,
+.delete-item:hover {
+  background: var(--sekunder);
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 330px) {
+  html {
+    font-size: 8px;
+  }
+}
