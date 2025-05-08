@@ -23,14 +23,23 @@ function getCurrentDate() {
 }
 
 // Fungsi untuk memberikan warna ketika memilih level priority
+// function getPriorityStars(priority) {
+//   switch (priority) {
+//     case "low":
+//       return "⭐";
+//     case "medium":
+//       return "⭐⭐";
+//     case "high":
+//       return "⭐⭐⭐";
+//   }
+// }
 function getPriorityStars(priority) {
-  switch (priority) {
-    case "low":
-      return "⭐";
-    case "medium":
-      return "⭐⭐";
-    case "high":
-      return "⭐⭐⭐";
+  if (priority === "low") {
+    return "⭐";
+  } else if (priority === "medium") {
+    return "⭐⭐";
+  } else if (priority === "high") {
+    return "⭐⭐⭐";
   }
 }
 
