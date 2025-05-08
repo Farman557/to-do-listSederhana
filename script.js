@@ -22,17 +22,7 @@ function getCurrentDate() {
   return `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
 }
 
-// Fungsi untuk memberikan warna ketika memilih level priority
-// function getPriorityStars(priority) {
-//   switch (priority) {
-//     case "low":
-//       return "⭐";
-//     case "medium":
-//       return "⭐⭐";
-//     case "high":
-//       return "⭐⭐⭐";
-//   }
-// }
+// Fungsi untuk memberikan nilai di setiap level priority
 function getPriorityStars(priority) {
   if (priority === "low") {
     return "⭐";
